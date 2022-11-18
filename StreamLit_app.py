@@ -12,7 +12,7 @@ st.image("https://www.cayetano.edu.pe/cayetano/images/2017/SETIEMBRE/logo-OFICIA
 ########
 #Titulo#
 ########
-st.markdown("Tema:")
+st.subheader("Tema:")
 st.title("SUNEDU - Licenciamiento Institucional")
 st.write("-----------------------------")
 

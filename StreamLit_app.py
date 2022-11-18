@@ -56,3 +56,5 @@ st.write("-----------------------------")
 Diccionario_Licencia=pd.read_excel(r'https://github.com/Alexandeeer1/grupo6_program_avanzada/raw/main/Licenciamiento%20Institucional%20-%20Diccionario_1.xlsx', header= 0)
 st.write(Diccionario_Licencia)
 
+st.image("https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.cayetano.edu.pe%2Fcayetano%2Fen%2Fnoticias%2F428-comunicado-oficial-nueva-fecha-factor-excelencia-medicina&psig=AOvVaw1ATh0ZryQvuoCazNvf7gMN&ust=1668877001894000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCOi36sCZuPsCFQAAAAAdAAAAABAL")
+

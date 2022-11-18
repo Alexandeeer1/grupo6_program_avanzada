@@ -25,6 +25,6 @@ st.write("-----------------------------")
 #Lectura De Datos En Excel#
 ###########################
 
-Licencia_Institucional=pd.read_csv(r'https://www.datosabiertos.gob.pe/sites/default/files/Licenciamiento%20Institucional_7.csv', header= 0)
+Licencia_Institucional=pd.read_excel(r'https://github.com/Alexandeeer1/grupo6_program_avanzada/raw/main/Licenciamiento-Institucional_7.xlsx', header= 0)
 st.write(Licencia_Institucional)
 

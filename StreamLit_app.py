@@ -1,5 +1,5 @@
 import pandas as pd
 import streamlit as st
 
-st.tittle("hola mundo ")
+st.title("hola mundo ")
 

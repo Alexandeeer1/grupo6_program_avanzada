@@ -4,6 +4,11 @@
 import pandas as pd
 import streamlit as st
 
+#####################
+#logo de la cayetano#
+#####################
+st.image("https://www.cayetano.edu.pe/cayetano/images/2017/SETIEMBRE/logo-OFICIAL.png")
+
 ########
 #Titulo#
 ########
@@ -56,5 +61,4 @@ st.write("-----------------------------")
 Diccionario_Licencia=pd.read_excel(r'https://github.com/Alexandeeer1/grupo6_program_avanzada/raw/main/Licenciamiento%20Institucional%20-%20Diccionario_1.xlsx', header= 0)
 st.write(Diccionario_Licencia)
 
-st.image("https://www.cayetano.edu.pe/cayetano/images/2017/SETIEMBRE/logo-OFICIAL.png")
 

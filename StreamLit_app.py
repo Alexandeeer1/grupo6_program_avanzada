@@ -33,6 +33,7 @@ st.write("-----------------------------")
 ###########################
 #Lectura De Datos En Excel#
 ###########################
+st.header("LICENCIA INSTITUCIONAL:")
 columnas=["CODIGO_ENTIDAD",
           "NOMBRE",
           "TIPO_GESTION",

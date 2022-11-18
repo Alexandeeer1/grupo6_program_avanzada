@@ -33,9 +33,25 @@ st.write("-----------------------------")
 ###########################
 #Lectura De Datos En Excel#
 ###########################
-
-Licencia_Institucional=pd.read_excel(r'https://github.com/Alexandeeer1/grupo6_program_avanzada/raw/main/Licenciamiento-Institucional_7.xlsx')
+columnas=["CODIGO_ENTIDAD",
+          "NOMBRE",
+          "TIPO_GESTION",
+          "ESTADO_LICENCIAMIENTO",
+          "FECHA_INICIO_LICENCIAMIENTO",
+          "FECHA_FIN_LICENCIAMIENTO",
+          "PERIODO_LICENCIAMIENTO",
+          "DEPARTAMENTO",
+          "PROVINCIA",
+          "DISTRITO",
+          "UBIGEO",
+          "LATITUD",
+          "LONGITUD",
+          "FECHA_CORTE"]
+Licencia_Institucional=pd.read_excel(r'https://github.com/Alexandeeer1/grupo6_program_avanzada/raw/main/Licenciamiento-Institucional_7.xlsx', header=0, names=columnas)
 st.write(Licencia_Institucional)
+
+st.write("-----------------------------")
 
 Diccionario_Licencia=pd.read_excel(r'https://github.com/Alexandeeer1/grupo6_program_avanzada/raw/main/Licenciamiento%20Institucional%20-%20Diccionario_1.xlsx', header= 0)
 st.write(Diccionario_Licencia)
+

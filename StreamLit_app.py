@@ -60,5 +60,6 @@ Licencia_Institucional=pd.read_excel(r'https://github.com/Alexandeeer1/grupo6_pr
 
 st.write(Licencia_Institucional)
 
+st.bar_chart(Licencia_Institucional)
 
 st.write("-----------------------------")

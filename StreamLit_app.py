@@ -31,7 +31,7 @@ st.write("-----------------------------")
 #Contexto#
 ##########
 st.subheader("Concepto del tema:")
-st.write("""En este proyecto presentaremos avances y el estatus actual del licenciamiento de Universidades a nivel nacional, 
+st.text_area("""En este proyecto presentaremos avances y el estatus actual del licenciamiento de Universidades a nivel nacional, 
          este proyecto se dividirá en regiones y en el tipo de identidad lo cual nos dará una mayor perspectiva nacional de 
          lo que está sucediendo hoy en día con este tema tan polarizado políticamente.
 """)

@@ -60,6 +60,8 @@ Licencia_Institucional=pd.read_excel(r'https://github.com/Alexandeeer1/grupo6_pr
 
 st.write(Licencia_Institucional)
 
-st.bar_chart(Licencia_Institucional)
-
+for i in range(6,15):
+    fig = px.histogram(Licencia_Institucional, Licencia_Institucional.columns[i])
+    st.plotly_chart(fig, use_container_width=True)
+    
 st.write("-----------------------------")

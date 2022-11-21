@@ -36,16 +36,28 @@ st.write("""En este proyecto presentaremos avances y el estatus actual del licen
          lo que está sucediendo hoy en día con este tema tan polarizado políticamente.
 """)
 st.write("-----------------------------")
+
 ###########################
 #Lectura De Datos En Excel#
 ###########################
 st.header("LICENCIA INSTITUCIONAL:")
+columnas=["CODIGO_ENTIDAD",
+          "NOMBRE",
+          "TIPO_GESTION",
+          "ESTADO_LICENCIAMIENTO",
+          "FECHA_INICIO_LICENCIAMIENTO",
+          "FECHA_FIN_LICENCIAMIENTO",
+          "PERIODO_LICENCIAMIENTO",
+          "DEPARTAMENTO",
+          "PROVINCIA",
+          "DISTRITO",
+          "UBIGEO",
+          "LATITUD",
+          "LONGITUD",
+          "FECHA_CORTE"]
 
 Licencia_Institucional=pd.read_excel(r'https://github.com/Alexandeeer1/grupo6_program_avanzada/raw/main/Licenciamiento%20Institucional_7.xlsx', header=1, names=columnas)
 st.write(Licencia_Institucional)
-
-st.table(Licencia_Institucional)
-
 st.write("-----------------------------")
 
 Diccionario_Licencia=pd.read_excel(r'https://github.com/Alexandeeer1/grupo6_program_avanzada/raw/main/Licenciamiento%20Institucional%20-%20Diccionario_1.xlsx', header= 0)

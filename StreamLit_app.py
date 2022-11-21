@@ -1,7 +1,12 @@
 ###########
 #Librerias#
 ###########
+import pip
+pip.main(["install", "openpyxl"])
+pip.main(["install", "pandas"])
+
 import pandas as pd
+
 import streamlit as st
 
 #####################

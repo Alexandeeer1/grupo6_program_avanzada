@@ -67,6 +67,7 @@ st.write(Licencia_Institucional)
 st.write("-----------------------------")
 
 
+st.selectbox(Licencia_Institucional)
 
 
 

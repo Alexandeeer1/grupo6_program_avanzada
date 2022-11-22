@@ -63,14 +63,12 @@ columnas=["CODIGO_ENTIDAD",
           "FECHA_CORTE"]
 
 Licencia_Institucional = pd.read_excel(r'https://github.com/Alexandeeer1/grupo6_program_avanzada/raw/main/Licenciamiento%20Institucional_7.xlsx', header=1, names=columnas)  
-
-edad=Licencia_Institucional["NOMBRE"]
-st.linechart(edad)
 st.write(Licencia_Institucional)
+
+edad=Licencia_Institucional['NOMBRE']
+st.linechart(edad)
+
 st.write("-----------------------------")
-
-
-st.selectbox(Licencia_Institucional)
 
 
 

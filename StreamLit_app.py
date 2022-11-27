@@ -47,6 +47,12 @@ st.write("-----------------------------")
 #Lectura De Datos En Excel#
 ###########################
 st.header("LICENCIA INSTITUCIONAL:")
+st.write("""¿Que es la licencia institucional?""")
+st.write("""Una licencia institucional es un procedimiento obligatorio creada por la SUNEDU. Sirve para ver si las universidades 
+         del pais cumple con el CBC""")
+
+st.write(""" A continuacion, le mostramos la tabla con los datos de todas las universidades del Perú""") 
+
 columnas=["CODIGO_ENTIDAD",
           "NOMBRE",
           "TIPO_GESTION",
@@ -67,6 +73,12 @@ st.write(Licencia_Institucional)
 
 edad=Licencia_Institucional["NOMBRE"]
 st.linechart(edad)
+
+opcion = st.selectbox(
+    'How would you like to be contacted?',
+    ('Email', 'Home phone', 'Mobile phone'))
+
+st.write('You selected:', opcion)
 
 st.write("-----------------------------")
 

@@ -70,7 +70,7 @@ Licencia_Institucional = pd.read_excel(r'https://github.com/Alexandeeer1/grupo6_
 st.write(Licencia_Institucional)
 
 opcion = st.selectbox(
-    'How would you like to be contacted?',
+    'Eliga algún departamento del Perú en el botón de abajo',
     ('Email', 'Home phone', 'Mobile phone'))
 
 st.write('You selected:', opcion)

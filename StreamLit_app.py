@@ -69,7 +69,8 @@ columnas=["CODIGO_ENTIDAD",
 
 L_Insti = pd.read_excel(r'https://github.com/Alexandeeer1/grupo6_program_avanzada/raw/main/Licenciamiento%20Institucional_7.xlsx', header=1, names=columnas)
 st.checkbox("Use container width", value=False, key="use_container_width")
-df = L_Insti()
+st.dataframe(L_Insti)
+
 st.write("-----------------------------")
 
 opcion = st.selectbox(

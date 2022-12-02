@@ -78,7 +78,7 @@ st.write('You selected:', opcion)
 
 st.write("-----------------------------")
 
-st.bar_chart(data=Licencia_Institucional, *, x=None, y=None, width=0, height=0, use_container_width=True)
+st.bar_chart(Licencia_Institucional, use_container_width=True)
 
 
 

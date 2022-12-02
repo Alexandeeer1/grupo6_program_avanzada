@@ -6,7 +6,7 @@ pip.main(["install", "openpyxl"])
 pip.main(["install", "pandas"])
 
 import pandas as pd
-
+import pydeck as pdk
 import streamlit as st
 
 #####################
@@ -78,7 +78,7 @@ st.write('You selected:', opcion)
 
 st.write("-----------------------------")
 
-
+st.bar_chart(data=Licencia_Institucional, *, x=None, y=None, width=0, height=0, use_container_width=True)
 
 
 

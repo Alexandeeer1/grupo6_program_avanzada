@@ -87,10 +87,10 @@ opcion = st.selectbox(
     ('Email', 'Home phone', 'Mobile phone'))
 st.write('You selected:', opcion)
 
-variables=pd.Dataframe(
+variables=pd.Dataframe({
   "Cantidad":[91,50],
   "Licencia":["Otorgadas","No otorgadas"],
-   )
+   })
 bar_chart = alt.chart(variables).mark_bar().encode(
             y="Cantidad",
             x="Licencia",

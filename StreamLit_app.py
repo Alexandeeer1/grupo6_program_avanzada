@@ -83,7 +83,7 @@ st.dataframe(L_Insti)
 st.write("-----------------------------")
 
 df = pd.DataFrame(
-    [-13,1612654],[-74,2257339],
+    [-13,1613],[-74,2257],
     columns=['lat', 'lon'])
 
 st.map(df)

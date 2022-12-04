@@ -94,11 +94,8 @@ st.write("-----------------------------")
 st.bar_chart(L_Insti, use_container_width=True)
 
 
-data = [[-33.71205471, 29.19017682], [-33.81205471, 29.11017682], [-34.71205471, 29.49017682]]
-df = pd.DataFrame(data, columns=['Latitude', 'Longitude'])
-
+df = pd.DataFrame(np.random.randn(800, 2) / [50, 50] + [46.34, -108.7],columns=['latitude', 'longitude'])
 st.map(df)
-
 
 
 

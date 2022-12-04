@@ -88,12 +88,12 @@ opcion = st.selectbox(
 st.write('You selected:', opcion)
 
 variables=pd.Dataframe(
-  "Cantidad":[91,50]
-  "Licencia":["Otorgadas","No otorgadas"]
+  "Cantidad":[91,50],
+  "Licencia":["Otorgadas","No otorgadas"],
    )
 bar_chart = alt.chart(variables).mark_bar().encode(
-            y="Cantidad"
-            x="Licencia"
+            y="Cantidad",
+            x="Licencia",
 )
 st.altair_chart(bar_chart, use_container_width=True)
 

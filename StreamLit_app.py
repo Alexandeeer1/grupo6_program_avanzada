@@ -51,6 +51,12 @@ st.header("LICENCIA INSTITUCIONAL:")
 
 st.write("""Una licencia institucional es un procedimiento obligatorio para todas las universidades , 
 creado por la SUNEDU, para ver si cumplen con la CBC (condiciones basicas de Calidad""")
+
+
+video1=open("videoplayback.mp4","rb")
+st.video(video1)
+
+
 st.write("""A continuacion, le mostraremos la tabla con los datos de todas las universidades de Lima""")
 
 columnas=["CODIGO_ENTIDAD",

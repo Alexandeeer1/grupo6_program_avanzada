@@ -87,6 +87,10 @@ opcion = st.selectbox(
 
 st.write('You selected:', opcion)
 
+data = [[-13,1612654, -74,2257339], [-13,1483009,-74,228788]]
+df = pd.DataFrame(data, columns=['Latitude', 'Longitude'])
+st.map(df)
+
 st.write("-----------------------------")
 
 st.bar_chart(L_Insti, use_container_width=True)

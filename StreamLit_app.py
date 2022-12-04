@@ -87,10 +87,17 @@ opcion = st.selectbox(
     ('Email', 'Home phone', 'Mobile phone'))
 st.write('You selected:', opcion)
 
-L_Insti=pd.read_csv("https://github.com/Alexandeeer1/grupo6_program_avanzada/raw/main/Licenciamiento%20Institucional_7.xlsx",sep=";")
-    df = pd.DataFrame(latlon,columns=['lat', 'lon'])  
-    st.map(df)
+variables=pd.Dataframe(
+  "Cantidad":[91,50]
+  "Licencia":["Otorgadas","No otorgadas"]
+   )
+bar_chart = alt.chart(variables).mark_bar().encode(
+            y="Cantidad"
+            x="Licencia"
+)
+st.altair_chart(bar_chart, use_container_width=True)
 
+           
 
 st.write("-----------------------------")
 

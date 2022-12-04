@@ -8,7 +8,7 @@ pip.main(["install", "pandas"])
 import pandas as pd
 import pydeck as pdk
 import streamlit as st
-
+import numpy as np 
 #####################
 #logo de la cayetano#
 #####################
@@ -94,14 +94,11 @@ st.write("-----------------------------")
 st.bar_chart(L_Insti, use_container_width=True)
 
 
-
-
-
-
 data = [[-33.71205471, 29.19017682], [-33.81205471, 29.11017682], [-34.71205471, 29.49017682]]
 df = pd.DataFrame(data, columns=['Latitude', 'Longitude'])
 
 st.map(df)
+
 
 
 

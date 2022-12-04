@@ -87,15 +87,18 @@ opcion = st.selectbox(
     ('Email', 'Home phone', 'Mobile phone'))
 st.write('You selected:', opcion)
 
-df = pd.DataFrame(
- np.random.randn(1000, 2) / [50, 50] + [37.76, -122.4],
- columns=['lat', 'lon'])
+
 
            
 
 st.write("-----------------------------")
 
-st.bar_chart(L_Insti, use_container_width=True)
+"""st.bar_chart(L_Insti, use_container_width=True)"""
+
+
+df = pd.DataFrame(
+ np.random.randn(1000, 2) / [50, 50] + [37.76, -122.4],
+ columns=['lat', 'lon'])
 
 
 

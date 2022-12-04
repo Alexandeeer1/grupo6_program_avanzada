@@ -93,7 +93,7 @@ st.write("-----------------------------")
 
 st.bar_chart(L_Insti, use_container_width=True)
 
-
+st.map()
 df = pd.DataFrame(np.random.randn(800, 2) / [50, 50] + [46.34, -108.7],columns=['latitude', 'longitude'])
 st.map(df)
 

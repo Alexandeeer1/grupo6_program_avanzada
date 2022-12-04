@@ -90,7 +90,7 @@ st.write('You selected:', opcion)
 variables=pd.Dataframe({
   "Cantidad":[91,50],
   "Licencia":["Otorgadas","No otorgadas"],
-   })
+})
 bar_chart = alt.chart(variables).mark_bar().encode(
             y="Cantidad",
             x="Licencia",

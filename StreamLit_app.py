@@ -82,19 +82,14 @@ st.dataframe(L_Insti)
 
 st.write("-----------------------------")
 
-df = pd.DataFrame(
-    [-13,1613],[-74,2257],
-    columns=['lat', 'lon'])
-
-st.map(df)
-
-
 opcion = st.selectbox(
     'Eliga algún departamento del Perú en el botón de abajo',
     ('Email', 'Home phone', 'Mobile phone'))
 st.write('You selected:', opcion)
 
-
+L_Insti=pd.read_csv("https://github.com/Alexandeeer1/grupo6_program_avanzada/raw/main/Licenciamiento%20Institucional_7.xlsx",sep=";")
+    df = pd.DataFrame(latlon,columns=['lat', 'lon'])  
+    st.map(df)
 
 
 st.write("-----------------------------")

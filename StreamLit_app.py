@@ -83,7 +83,7 @@ st.dataframe(L_Insti)
 st.write("-----------------------------")
 
 df = pd.DataFrame(
-    np.random.randn(1000, 2) / [50, 50] + [37.76, -122.4],
+    [-13,1612654],[-74,2257339],
     columns=['lat', 'lon'])
 
 st.map(df)

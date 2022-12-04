@@ -95,7 +95,7 @@ bar_chart = alt.chart(variables).mark_bar().encode(
             y="Cantidad",
             x="Licencia",
 )
-st.altair_chart(bar_chart, use_container_width=True)
+st.bar_chart(bar_chart)
 
            
 

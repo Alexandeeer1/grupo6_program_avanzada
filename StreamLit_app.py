@@ -9,6 +9,7 @@ import pandas as pd
 import pydeck as pdk
 import streamlit as st
 import numpy as np 
+
 #####################
 #logo de la cayetano#
 #####################
@@ -81,11 +82,18 @@ st.dataframe(L_Insti)
 
 st.write("-----------------------------")
 
+df = pd.DataFrame(
+    np.random.randn(1000, 2) / [50, 50] + [37.76, -122.4],
+    columns=['lat', 'lon'])
+
+st.map(df)
+
+
 opcion = st.selectbox(
     'Eliga algún departamento del Perú en el botón de abajo',
     ('Email', 'Home phone', 'Mobile phone'))
-
 st.write('You selected:', opcion)
+
 
 
 
@@ -93,9 +101,6 @@ st.write("-----------------------------")
 
 st.bar_chart(L_Insti, use_container_width=True)
 
-st.map()
-df = pd.DataFrame(np.random.randn(800, 2) / [50, 50] + [46.34, -108.7],columns=['latitude', 'longitude'])
-st.map(df)
 
 
 

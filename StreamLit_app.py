@@ -58,7 +58,7 @@ st.video(video1)
 
 st.write("""Fuente:https://youtu.be/2NlkqlD7RTE""")
 
-st.write("""A continuacion, le mostraremos la tabla con los datos de todas las universidades del Perú""")
+st.subheader("""A continuacion, le mostraremos la tabla con los datos de todas las universidades del Perú""")
 
 ###########################
 #Lectura De Datos En Excel#
@@ -101,7 +101,7 @@ st.map(df)
 
 
 L_Insti['Diameter'].plot.hist()
-l_Insti
+st.show(l_Insti)
 
 
 ###########################################

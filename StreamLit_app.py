@@ -242,7 +242,7 @@ opcion = st.selectbox(
 st.write('You selected:', opcion)
 st.write("-----------------------------")
 
-st.bar_chart(L_Insti["TIPO_GESTION"], use_container_width=True)
+st.bar_chart(L_Insti["NOMBRE","TIPO_GESTION"], use_container_width=True)
 
 
 

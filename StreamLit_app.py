@@ -44,10 +44,9 @@ st.write("""En este proyecto presentaremos avances y el estatus actual del licen
 """)
 st.write("-----------------------------")
 
-
-###########################
-#Lectura De Datos En Excel#
-###########################
+################
+#Titulo Y Video#
+################
 st.header("LICENCIA INSTITUCIONAL:")
 
 st.write("""Una licencia institucional es un procedimiento obligatorio para todas las universidades , 
@@ -61,6 +60,9 @@ st.write("""Fuente:https://youtu.be/2NlkqlD7RTE""")
 
 st.write("""A continuacion, le mostraremos la tabla con los datos de todas las universidades del Perú""")
 
+###########################
+#Lectura De Datos En Excel#
+###########################
 columnas=["CODIGO_ENTIDAD",
           "NOMBRE",
           "TIPO_GESTION",
@@ -97,15 +99,20 @@ df = pd.DataFrame(
  columns=['lat', 'lon'])
 st.map(df)
 
-#####################
-### gerararquia de las univercidades
-### particulares y acionales las principales
-########################
+
+L_Insti['Diameter'].plot.hist()
+l_Insti
+
+
+###########################################
+#gerararquia de las univercidades #########
+#particulares y acionales las principales #
+###########################################
 st.write("----------------------------------------------------------------------------------------------------------------")
 st.write(""" El siguiente ranking contiene 58 universidades licenciadas calificadas
 según su producción científica en el período de 1980 hasta 2020:""")
 
-data = {'Ranking' : ['UPCH – Universidad Peruana Cayetano Heredia.', ####1
+data = {'Ranking' : ['UPCH – Universidad Peruana Cayetano Heredia.', 
                      'PUCP – Pontificia Universidad Católica del Perú.',
                      'UNMSM – Universidad Nacional Mayor de San Marcos.',
                      'UNI – Universidad Nacional de Ingeniería.',
@@ -170,6 +177,8 @@ data = {'Ranking' : ['UPCH – Universidad Peruana Cayetano Heredia.', ####1
 print(type(data))
 df = pd.DataFrame(data)
 df
+
+
 
 
 

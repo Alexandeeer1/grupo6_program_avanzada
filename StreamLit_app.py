@@ -230,20 +230,19 @@ unis=["UNIVERSIDAD NACIONAL MAYOR DE SAN MARCOS",
       "FACULTAD DE TEOLOGÍA PONTIFICIA Y CIVIL DE LIMA"]
 
 
-L_Insti = pd.read_excel(r'https://github.com/Alexandeeer1/grupo6_program_avanzada/raw/main/Licenciamiento%20Institucional_7.xlsx', header=1, names=columnas, NAMES=unis)
+L_Insti = pd.read_excel(r'https://github.com/Alexandeeer1/grupo6_program_avanzada/raw/main/Licenciamiento%20Institucional_7.xlsx', header=1, names=columnas)
 st.checkbox("Use container width", value=False, key="use_container_width")
 st.dataframe(L_Insti)
-
 st.write("-----------------------------")
+
 
 opcion = st.selectbox(
     'Eliga algún departamento del Perú en el botón de abajo',
     ("Eliga su opcion: ",'Arequipa', 'Ayacucho ', 'Cajamarca ','Callao', 'Cusco ','Huancavelica', 'Huánuco ','Ica', 'Junín ','La Libertad', 'Lambayeque','Lima Metropolitana	', 'Lima (departamento)	 ','Loreto', ' Madre de Dios	','Moquegua', 'Pasco ','Piura', ' Puno','San Martín	', ' Tacna','Tumbes', ' Ucayali'))
 st.write('You selected:', opcion)
-
 st.write("-----------------------------")
 
-"""st.bar_chart(L_Insti, use_container_width=True)"""
+st.bar_chart(L_Insti, use_container_width=True)
 
 
 df = pd.DataFrame(

@@ -5,6 +5,7 @@ import pip
 pip.main(["install", "openpyxl"])
 pip.main(["install", "pandas"])
 
+from bokeh.plotting import figure
 import pandas as pd
 import pydeck as pdk
 import streamlit as st

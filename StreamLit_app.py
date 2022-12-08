@@ -211,7 +211,7 @@ unis=["UNIVERSIDAD NACIONAL MAYOR DE SAN MARCOS",
       "UNIVERSIDAD PRIVADA LEONARDO DA VINCI S.A.C.",
       "UNIVERSIDAD NACIONAL INTERCULTURAL DE QUILLABAMBA",
       "UNIVERSIDAD LATINOAMERICANA CIMA S.A.C.",
-      "UNIVERSIDAD PRIVADA AUTÓNOMA DEL SUR S.A.C."",
+      "UNIVERSIDAD PRIVADA AUTÓNOMA DEL SUR S.A.C.",
       "UNIVERSIDAD SANTO DOMINGO DE GUZMÁN S.A.C.",
       "UNIVERSIDAD PRIVADA LÍDER PERUANA S.A.C.",
       "UNIVERSIDAD PRIVADA PERUANO ALEMANA S.A.C.",
@@ -219,17 +219,18 @@ unis=["UNIVERSIDAD NACIONAL MAYOR DE SAN MARCOS",
       "UNIVERSIDAD PERUANA SANTO TOMÁS DE AQUINO DE CIENCIA E INTEGRACIÓN S.A.C.",
       "UNIVERSIDAD PRIVADA SISE S.A.C.",
       "GRUPO EDUCATIVO UNIVERSIDAD PRIVADA DE ICA S.A.C.",
-      "UNIVERSIDAD AUTÓNOMA DE ICA S.A.C.,
+      "UNIVERSIDAD AUTÓNOMA DE ICA S.A.C.",
       "UNIVERSIDAD PRIVADA DE LA SELVA PERUANA S.A.C.",
       "UNIVERSIDAD POLITÉCNICA AMAZÓNICA S.A.C.",
-      "UNIVERSIDAD PERUANA DE INTEGRACIÓN GLOBAL S.A.C.,
+      "UNIVERSIDAD PERUANA DE INTEGRACIÓN GLOBAL S.A.C.",
       "UNIVERSIDAD DE LAMBAYEQUE S.A.C.",
       "UNIVERSIDAD PERUANA DE ARTE ORVAL S.A.C.",
       "UNIVERSIDAD PERUANA DE INVESTIGACIÓN Y NEGOCIOS S.A.C.",
       "UNIVERSIDAD MARÍTIMA DEL PERÚ S.A.C.",
       "FACULTAD DE TEOLOGÍA PONTIFICIA Y CIVIL DE LIMA"]
 
-L_Insti = pd.read_excel(r'https://github.com/Alexandeeer1/grupo6_program_avanzada/raw/main/Licenciamiento%20Institucional_7.xlsx', header=1, names=columnas, names=unis)
+
+L_Insti = pd.read_excel(r'https://github.com/Alexandeeer1/grupo6_program_avanzada/raw/main/Licenciamiento%20Institucional_7.xlsx', header=1, names=columnas, NAMES=unis)
 st.checkbox("Use container width", value=False, key="use_container_width")
 st.dataframe(L_Insti)
 

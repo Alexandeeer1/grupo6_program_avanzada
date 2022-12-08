@@ -245,13 +245,7 @@ st.write("-----------------------------")
 st.bar_chart(L_Insti, use_container_width=True)
 
 
-df = pd.DataFrame(
- [37.76, -122.4],
- columns=['lat', 'lon'])
-st.map(df)
-
-
-L_Insti['Diameter'].plot.hist()
+L_Insti['DEPARTAMENTO'].plot.hist()
 st.show(l_Insti)
 
 

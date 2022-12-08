@@ -166,7 +166,7 @@ data = {'Ranking' : ['UPCH – Universidad Peruana Cayetano Heredia.',
                   48,49,50,51,52,53,54,55,56,57,58],
         'departamento' : ['LIMA', 'LIMA', 'LIMA', 'LIMA','LIMA','CUSCO','LIMA','AMAZONAS','AREQUIPA','TRUJILLO','LIMA',
                          'LIMA','LIMA', 'LIMA', 'LIMA','PUNO','LIMA', 'LIMA', 'LIMA', 'LIMA','LIMA','AREQUIPA','CAJAMARCA','AREQUIPA','PIURA',
-                         ]}
+                         'LIMA','AYACUCHO','MADRE DE DIOS']}
 print(type(data))
 df = pd.DataFrame(data)
 df

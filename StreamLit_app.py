@@ -5,7 +5,6 @@ import pip
 pip.main(["install", "openpyxl"])
 pip.main(["install", "pandas"])
 
-from bokeh.plotting import figure
 import pandas as pd
 import pydeck as pdk
 import streamlit as st
@@ -243,7 +242,7 @@ opcion = st.selectbox(
 st.write('You selected:', opcion)
 st.write("-----------------------------")
 
-st.bokeh_chart(L_Insti["TIPO_GESTION"], use_container_width=False)
+st.bar_chart(L_Insti["TIPO_GESTION"], use_container_width=False)
 
 
 

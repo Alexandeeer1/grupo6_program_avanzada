@@ -86,7 +86,7 @@ st.write("-----------------------------")
 
 opcion = st.selectbox(
     'Eliga algún departamento del Perú en el botón de abajo',
-    ('Arequipa', 'Ayacucho ', 'Cajamarca ','Callao', 'Cusco ','Huancavelica', 'Huánuco ','Ica', 'Junín ','La Libertad', 'Lambayeque','Lima Metropolitana	', 'Lima (departamento)	 ','Loreto', ' Madre de Dios	','Moquegua', 'Pasco ','Piura', ' Puno','San Martín	', ' Tacna','Tumbes', ' Ucayali'))
+    ("Eliga su opcion: ",'Arequipa', 'Ayacucho ', 'Cajamarca ','Callao', 'Cusco ','Huancavelica', 'Huánuco ','Ica', 'Junín ','La Libertad', 'Lambayeque','Lima Metropolitana	', 'Lima (departamento)	 ','Loreto', ' Madre de Dios	','Moquegua', 'Pasco ','Piura', ' Puno','San Martín	', ' Tacna','Tumbes', ' Ucayali'))
 st.write('You selected:', opcion)
 
 st.write("-----------------------------")

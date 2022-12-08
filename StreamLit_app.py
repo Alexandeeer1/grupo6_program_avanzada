@@ -231,7 +231,7 @@ unis=["UNIVERSIDAD NACIONAL MAYOR DE SAN MARCOS",
 
 
 L_Insti = pd.read_excel(r'https://github.com/Alexandeeer1/grupo6_program_avanzada/raw/main/Licenciamiento%20Institucional_7.xlsx', header=1, names=columnas)
-st.checkbox("Use container width", value=False, key="use_container_width")
+st.checkbox("Cajas Expandidas", value=False, key="use_container_width")
 st.dataframe(L_Insti)
 st.write("-----------------------------")
 

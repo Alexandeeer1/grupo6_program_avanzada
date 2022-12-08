@@ -244,40 +244,40 @@ st.write("-----------------------------")
 
 
 
-st.line_chart(L_Insti["TIPO_GESTION"], use_container_width=True)
+st.bar_chart(L_Insti["TIPO_GESTION"], use_container_width=True)
 st.write("-----------------------------")
 
 st.bar_chart(L_Insti["ESTADO_LICENCIAMIENTO"], use_container_width=True)
 st.write("-----------------------------")
 
-st.bar_chart(L_Insti["FECHA_INICIO_LICENCIAMIENTO"], use_container_width=True)
+st.area_chart(L_Insti["FECHA_INICIO_LICENCIAMIENTO"], use_container_width=True)
 st.write("-----------------------------")
 
-st.bar_chart(L_Insti["FECHA_FIN_LICENCIAMIENTO"], use_container_width=True)
+st.area_chart(L_Insti["FECHA_FIN_LICENCIAMIENTO"], use_container_width=True)
 st.write("-----------------------------")
 
-st.bar_chart(L_Insti["PERIODO_LICENCIAMIENTO"], use_container_width=True)
+st.area_chart(L_Insti["PERIODO_LICENCIAMIENTO"], use_container_width=True)
 st.write("-----------------------------")
 
-st.bar_chart(L_Insti["DEPARTAMENTO"], use_container_width=True)
+st.area_chart(L_Insti["DEPARTAMENTO"], use_container_width=True)
 st.write("-----------------------------")
 
-st.bar_chart(L_Insti["PROVINCIA"], use_container_width=True)
+st.area_chart(L_Insti["PROVINCIA"], use_container_width=True)
 st.write("-----------------------------")
 
-st.bar_chart(L_Insti["DISTRITO"], use_container_width=True)
+st.area_chart(L_Insti["DISTRITO"], use_container_width=True)
 st.write("-----------------------------")
 
-st.bar_chart(L_Insti["UBIGEO"], use_container_width=True)
+st.area_chart(L_Insti["UBIGEO"], use_container_width=True)
 st.write("-----------------------------")
 
-st.bar_chart(L_Insti["LATITUD"], use_container_width=True)
+st.area_chart(L_Insti["LATITUD"], use_container_width=True)
 st.write("-----------------------------")
 
-st.bar_chart(L_Insti["LONGITUD"], use_container_width=True)
+st.area_chart(L_Insti["LONGITUD"], use_container_width=True)
 st.write("-----------------------------")
 
-st.bar_chart(L_Insti["FECHA_CORTE"], use_container_width=True)
+st.area_chart(L_Insti["FECHA_CORTE"], use_container_width=True)
 st.write("-----------------------------")
 
 

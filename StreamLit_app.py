@@ -87,10 +87,6 @@ opcion = st.selectbox(
     ('Email', 'Home phone', 'Mobile phone'))
 st.write('You selected:', opcion)
 
-
-
-           
-
 st.write("-----------------------------")
 
 """st.bar_chart(L_Insti, use_container_width=True)"""
@@ -100,6 +96,28 @@ df = pd.DataFrame(
  [37.76, -122.4],
  columns=['lat', 'lon'])
 st.map(df)
+
+#####################
+### gerararquia de las univercidades
+### particulares y acionales las principales
+########################
+st.write("----------------------------------------------------------------------------------------------------------------")
+st.write(""" Ranking institucional en universidades , 
+segun la  SUNEDU  en (condiciones basicas de Calidad) en los ultimos años""")
+
+data = {'Ranking' : ['Universidad Peruana Cayetano Heredia', 'Universidad Nacional Mayor de San Marcos', 'Universidad Nacional Mayor de San Marcos',
+                    'Universidad Nacional de Ingeniería', 'Universidad Nacional Agraria La Molina'],
+        'TOP'   : [1, 2,3,4,5,6,7,8,9,10,11,12,13,14,16,17,18],
+        'departamento' : ['LIMA', 'LIMA', 'LIMA', 'LIMA']}
+print(type(data))
+df = pd.DataFrame(data)
+df
+
+
+
+
+
+
 
 
 

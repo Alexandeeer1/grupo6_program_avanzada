@@ -235,11 +235,73 @@ st.checkbox("Cajas Expandidas", value=False, key="use_container_width")
 st.dataframe(L_Insti)
 st.write("-----------------------------")
 
-
-opcion = st.selectbox(
-    'Eliga algún departamento del Perú en el botón de abajo',
-    ("Eliga su opcion: ",'Arequipa', 'Ayacucho ', 'Cajamarca ','Callao', 'Cusco ','Huancavelica', 'Huánuco ','Ica', 'Junín ','La Libertad', 'Lambayeque','Lima Metropolitana	', 'Lima (departamento)	 ','Loreto', ' Madre de Dios	','Moquegua', 'Pasco ','Piura', ' Puno','San Martín	', ' Tacna','Tumbes', ' Ucayali'))
+opcion = st.selectbox(L_Insti["DEPARTAMENTO"])
 st.write('You selected:', opcion)
+
+
+if opcion =="AREQUIPA":
+  st.area_chart(L_Insti["DEPARTAMENTO"], use_container_width=True)
+
+if opcion =="AYACUCHO":
+  st.area_chart(L_Insti["DEPARTAMENTO"], use_container_width=True)
+  
+if opcion =="CAJAMARCA":
+  st.area_chart(L_Insti["DEPARTAMENTO"], use_container_width=True)
+  
+if opcion =="CALLAO":
+  st.area_chart(L_Insti["DEPARTAMENTO"], use_container_width=True)
+  
+if opcion =="CUSCO":
+  st.area_chart(L_Insti["DEPARTAMENTO"], use_container_width=True)
+  
+if opcion =="HUANCAVELICA":
+  st.area_chart(L_Insti["DEPARTAMENTO"], use_container_width=True)
+  
+if opcion =="HUÁNUCO":
+  st.area_chart(L_Insti["DEPARTAMENTO"], use_container_width=True)
+  
+if opcion =="ICA":
+  st.area_chart(L_Insti["DEPARTAMENTO"], use_container_width=True)
+  
+if opcion =="JUNÍN":
+  st.area_chart(L_Insti["DEPARTAMENTO"], use_container_width=True)
+  
+if opcion =="LA LIBERTAD":
+  st.area_chart(L_Insti["DEPARTAMENTO"], use_container_width=True)
+  
+if opcion =="LAMBAYEQUE":
+  st.area_chart(L_Insti["DEPARTAMENTO"], use_container_width=True)
+  
+if opcion =="LIMA METROPOLITANA":
+  st.area_chart(L_Insti["DEPARTAMENTO"], use_container_width=True)
+  
+if opcion =="LIMA (DEPARTAMENTO)":
+  st.area_chart(L_Insti["DEPARTAMENTO"], use_container_width=True)
+  
+if opcion =="LORETO":
+  st.area_chart(L_Insti["DEPARTAMENTO"], use_container_width=True)
+  
+if opcion =="MADRE DE DIOS":
+  st.area_chart(L_Insti["DEPARTAMENTO"], use_container_width=True)
+  
+if opcion =="MOQUEGUA":
+  st.area_chart(L_Insti["DEPARTAMENTO"], use_container_width=True)
+  
+if opcion =="PASCO":
+  st.area_chart(L_Insti["DEPARTAMENTO"], use_container_width=True)
+  
+if opcion =="PIURA":
+  st.area_chart(L_Insti["DEPARTAMENTO"], use_container_width=True)
+  
+if opcion =="PUNO":
+  st.area_chart(L_Insti["DEPARTAMENTO"], use_container_width=True)
+  
+if opcion =="SAN MARTÍN":
+  st.area_chart(L_Insti["DEPARTAMENTO"], use_container_width=True)
+  
+if opcion =="TACNA":
+  st.area_chart(L_Insti["DEPARTAMENTO"], use_container_width=True)
+  
 st.write("-----------------------------")
 
 
@@ -250,11 +312,6 @@ st.write("-----------------------------")
 st.bar_chart(L_Insti["ESTADO_LICENCIAMIENTO"], use_container_width=True)
 st.write("-----------------------------")
 
-st.area_chart(L_Insti["FECHA_INICIO_LICENCIAMIENTO"], use_container_width=True)
-st.write("-----------------------------")
-
-st.area_chart(L_Insti["FECHA_FIN_LICENCIAMIENTO"], use_container_width=True)
-st.write("-----------------------------")
 
 st.area_chart(L_Insti["PERIODO_LICENCIAMIENTO"], use_container_width=True)
 st.write("-----------------------------")

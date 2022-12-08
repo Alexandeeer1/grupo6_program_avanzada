@@ -163,7 +163,7 @@ data = {'Ranking' : ['UPCH – Universidad Peruana Cayetano Heredia.',
                      'USAT – Universidad Católica Toribio de Mogrovejo.',
                      'UMA – Universidad María Auxiliadora.']
         'TOP'   : [1, 2,3,4,5,6,7,8,9,10,11,12,13,14,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,29,40,41,42,43,44,45,46,47,
-                  48,49,50,51,52,53,54,55,56,57,58],
+                  48,49,50,51,52,53,54,55,56],
         'departamento' : ['LIMA', 'LIMA', 'LIMA', 'LIMA','LIMA','CUSCO','LIMA','AMAZONAS','AREQUIPA','TRUJILLO','LIMA',
                          'LIMA','LIMA', 'LIMA', 'LIMA','PUNO','LIMA', 'LIMA', 'LIMA', 'LIMA','LIMA','AREQUIPA','CAJAMARCA','AREQUIPA','PIURA',
                          'LIMA','AYACUCHO','MADRE DE DIOS']}

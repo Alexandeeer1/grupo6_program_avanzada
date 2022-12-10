@@ -9,6 +9,7 @@ import pandas as pd
 import pydeck as pdk
 import streamlit as st
 import numpy as np 
+import altair as alt
 
 
 #####################
@@ -302,9 +303,36 @@ if opcion =="TACNA":
   st.area_chart(L_Insti["DEPARTAMENTO"], use_container_width=True)
   
 st.write("-----------------------------")
+###############################################################
+st.set_page_config(page_title="Graficas", page_icon="📈")
+
+st.title("Gráficos")
+
+data = st.session_state["data"]
+
+options = st.multiselect(
+    'Seleccione la información que desea observar para que sea mostrada en un histograma:',
+    ['Calidad', "Amplitud"],
+    ['Latitud'])
 
 
 
+if "licenciadas" in options:
+    st.header("Histograma de Calidad")
+
+    mag_chart = (
+        alt.Chart(data)
+        .mark_bar()
+        .encode(
+            alt.X("Calidad:Q", bin=alt.BinParams(maxbins=149), title="Calidad"),
+            alt.Y("count()", title="Frecuencia de Calidad"),
+        )
+    )
+    mag_chart.title = "Histograma de Calidad"
+    
+    st.altair_chart(mag_chart, use_container_width=True)
+    st.write("""Este gráfico muestra las calidades de las
+             univercidades licenciadas.""")
 
 
 

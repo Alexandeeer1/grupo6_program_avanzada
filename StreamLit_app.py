@@ -246,7 +246,7 @@ caja= st.multiselect(
 
 filas= x.loc[caja]
 st.dataframe(filas)
-Barra= x.loc[filas,"PERIODO_LICENCIAMIENTO"]
+Barra= x.loc[caja,"PERIODO_LICENCIAMIENTO"]
 st.bar_chart(Barra)   
 
 

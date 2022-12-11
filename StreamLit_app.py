@@ -260,7 +260,7 @@ if opcion =="AREQUIPA":
   st.dataframe(unis)
     
 elif opcion =="AYACUCHO":
- unis=L_Insti.loc[L_Insti.loc[:,"DEPARTAMENTO"]=="AYACUCHO"]
+  unis=L_Insti.loc[L_Insti.loc[:,"DEPARTAMENTO"]=="AYACUCHO"]
   st.dataframe(unis)
 
 """  

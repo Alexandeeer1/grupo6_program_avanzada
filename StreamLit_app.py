@@ -237,7 +237,7 @@ unis=["UNIVERSIDAD NACIONAL MAYOR DE SAN MARCOS",
 L_Insti = pd.read_excel(r'https://github.com/Alexandeeer1/grupo6_program_avanzada/raw/main/Licenciamiento%20Institucional_7.xlsx', header=1, names=columnas)
 st.checkbox("Cajas Expandidas", value=False, key="use_container_width")
 st.dataframe(L_Insti)
-st.write("Fuente: https://docs.google.com/presentation/d/12MIqRJggde9CRaV6BGikoRegJCGWUKYJfnEfpnOudlQ/edit#slide=id.p")
+st.write("Fuente: https://www.datosabiertos.gob.pe/dataset/sunedu-licenciamiento-institucional")
 
 st.write("-----------------------------")
 

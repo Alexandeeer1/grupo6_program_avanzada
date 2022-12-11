@@ -240,7 +240,7 @@ st.dataframe(L_Insti)
 st.write("-----------------------------")
 
 set_universidades= L_Insti['NOMBRE'].dropna().unique()
-x= L_Insti.set_index("NOMBRE")
+x= data.set_index("NOMBRE")
 esta= L_Insti["TIPO_GESTION"].unique()
 licensi= L_Insti["ESTADO_LICENCIAMIENTO"].unique()
 estado=st.selectbox("Gestion tipo:",("Publico","Privado"))

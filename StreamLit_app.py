@@ -286,7 +286,7 @@ elif opcion =="JUNÍN":
   
   
 elif opcion =="LA LIBERTAD":
-  unis=L_Insti.loc[L_Insti.loc[:,"DEPARTAMENTO"]=="LIBERTAD"]
+  unis=L_Insti.loc[L_Insti.loc[:,"DEPARTAMENTO"]=="LA LIBERTAD"]
   st.dataframe(unis)
   
 elif opcion =="LAMBAYEQUE":
@@ -354,7 +354,7 @@ st.bar_chart(Barra)
 
 
 
-"""###############################################################"""
+
 
 
 

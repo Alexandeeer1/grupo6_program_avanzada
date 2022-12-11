@@ -239,16 +239,15 @@ st.checkbox("Cajas Expandidas", value=False, key="use_container_width")
 st.dataframe(L_Insti)
 st.write("-----------------------------")
 x=L_Insti.set_index("NOMBRE")   
-opti= st.multiselect(
+caja= st.multiselect(
     "Seleccione las universidades que desea comparar la el periodo de licenciamiento", 
     options= L_Insti["NOMBRE"].unique()
     )
 
-para= x.loc[opti]
-st.dataframe(para)
-baraa= x.loc[opti,"PERIODO_LICENCIAMIENTO"]
-
-st.bar_chart(baraa)   
+filas= x.loc[caja]
+st.dataframe(filas)
+Barra_L= x.loc[filas,"PERIODO_LICENCIAMIENTO"]
+st.bar_chart(Barra_L)   
 
 
 

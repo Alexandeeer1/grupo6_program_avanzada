@@ -242,8 +242,8 @@ st.write("-----------------------------")
 
 
 opcion = st.selectbox(
-  "Selecciones xd",
-  L_Insti["DEPARTAMENTO"]
+  "Seleccione el departamento:",
+  ('AREQUIPA', 'AYACUCHO', 'CAJAMARCA','CALLAO','CUSCO','HUANCAVELICA','HUÁNUCO','ICA','JUNÍN',"LA LIBERTAD",'LAMBAYEQUE','LIMA','LORETO','MADRE DE DIOS','MOQUEGUA','PASCO','PIURA','PUNO','SAN MARTÍN','TACNA')                      
   )
 if opcion =="AREQUIPA":
   st.write('You selected:', opcion)

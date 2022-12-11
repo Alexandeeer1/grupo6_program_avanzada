@@ -257,11 +257,12 @@ opti= st.multiselect(
     "Seleccione las universidades que desea comparar la el periodo de licenciamiento", 
     options= L_Insti["NOMBRE"].unique()
     )
+
 para= x.loc[opti]
 st.dataframe(para)
-baraa= x.loc[opti,"PERIODO_LICENCIAMIENTO"]
+"""baraa= x.loc[opti,"PERIODO_LICENCIAMIENTO"]
 
-st.bar_chart(baraa)    
+st.bar_chart(baraa)"""    
 
 
 

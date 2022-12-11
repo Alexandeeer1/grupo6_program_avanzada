@@ -238,6 +238,7 @@ L_Insti = pd.read_excel(r'https://github.com/Alexandeeer1/grupo6_program_avanzad
 st.checkbox("Cajas Expandidas", value=False, key="use_container_width")
 st.dataframe(L_Insti)
 st.write("-----------------------------")
+
 opcion = st.selectbox(
   "Selecciones xd",
   L_Insti["DEPARTAMENTO"]
@@ -326,7 +327,7 @@ elif opcion =="TACNA":
   st.dataframe(unis)
 
 
-
+st.write("-----------------------------")
 
 x=L_Insti.set_index("NOMBRE")   
 caja= st.multiselect(
@@ -341,7 +342,15 @@ st.bar_chart(Barra)
 
 
 
-st.write("-----------------------------")
+
+
+
+
+
+
+
+
+
 """###############################################################"""
 
 

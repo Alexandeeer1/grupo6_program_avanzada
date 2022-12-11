@@ -67,9 +67,8 @@ st.subheader("""A continuacion, le mostraremos la tabla con los datos de todas l
 st.write("-----------------------------")
 
 
-st.write("-----------------------------")
 
-x= data.set_index("NOMBRE")
+
 
 
 ###########################

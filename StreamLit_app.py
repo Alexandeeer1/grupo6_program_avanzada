@@ -258,7 +258,7 @@ st.write('You selected:', opcion)
 
 if opcion =="AREQUIPA":
   st.write('You selected:', opcion)
-  unis=L_Insti.loc[:,"DEPARTAMENTO"]=="AREQUIPA"]
+  unis=L_Insti.loc[:,"DEPARTAMENTO"]=="AREQUIPA"
   st.dataframe(unis)
   
 """  

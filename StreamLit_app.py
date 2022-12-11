@@ -234,7 +234,7 @@ unis=["UNIVERSIDAD NACIONAL MAYOR DE SAN MARCOS",
       "FACULTAD DE TEOLOGÍA PONTIFICIA Y CIVIL DE LIMA"]
 
 
-L_Insti = pd.read_excel(r'https://github.com/Alexandeeer1/grupo6_program_avanzada/blob/main/Licenciamiento%20Institucional_7.xlsx', header=1, names=columnas)
+L_Insti = pd.read_excel(r'https://github.com/Alexandeeer1/grupo6_program_avanzada/raw/main/Licenciamiento%20Institucional_7.xlsx', header=1, names=columnas)
 st.checkbox("Cajas Expandidas", value=False, key="use_container_width")
 st.dataframe(L_Insti)
 st.write("-----------------------------")

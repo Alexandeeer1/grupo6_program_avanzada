@@ -254,17 +254,16 @@ opcion = st.selectbox(
   "Selecciones xd",
   L_Insti["DEPARTAMENTO"]
   )
-st.write('You selected:', opcion)
-
 if opcion =="AREQUIPA":
   st.write('You selected:', opcion)
   unis=L_Insti.loc[L_Insti.loc[:,"DEPARTAMENTO"]=="AREQUIPA"]
   st.dataframe(unis)
-  
-"""  
+    
 elif opcion =="AYACUCHO":
-  st.area_chart(L_Insti["DEPARTAMENTO"], use_container_width=True)
+ unis=L_Insti.loc[L_Insti.loc[:,"DEPARTAMENTO"]=="AYACUCHO"]
+  st.dataframe(unis)
 
+"""  
 elif opcion =="CAJAMARCA":
   st.area_chart(L_Insti["DEPARTAMENTO"], use_container_width=True)
   

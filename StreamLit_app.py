@@ -238,18 +238,6 @@ L_Insti = pd.read_excel(r'https://github.com/Alexandeeer1/grupo6_program_avanzad
 st.checkbox("Cajas Expandidas", value=False, key="use_container_width")
 st.dataframe(L_Insti)
 st.write("-----------------------------")
-x=L_Insti.set_index("NOMBRE")   
-caja= st.multiselect(
-    "Seleccione las universidades que desea comparar la el periodo de licenciamiento", 
-    options= L_Insti["NOMBRE"].unique()
-    )
-
-filas= x.loc[caja]
-st.dataframe(filas)
-Barra= x.loc[caja,"PERIODO_LICENCIAMIENTO"]
-st.bar_chart(Barra)   
-
-
 opcion = st.selectbox(
   "Selecciones xd",
   L_Insti["DEPARTAMENTO"]
@@ -336,7 +324,23 @@ elif opcion =="SAN MARTÍN":
 elif opcion =="TACNA":
   unis=L_Insti.loc[L_Insti.loc[:,"DEPARTAMENTO"]=="TACNA"]
   st.dataframe(unis)
-  
+
+
+
+
+x=L_Insti.set_index("NOMBRE")   
+caja= st.multiselect(
+    "Seleccione las universidades que desea comparar la el periodo de licenciamiento", 
+    options= L_Insti["NOMBRE"].unique()
+    )
+
+filas= x.loc[caja]
+st.dataframe(filas)
+Barra= x.loc[caja,"PERIODO_LICENCIAMIENTO"]
+st.bar_chart(Barra)   
+
+
+
 st.write("-----------------------------")
 """###############################################################"""
 

@@ -250,9 +250,14 @@ Barra= x.loc[caja,"PERIODO_LICENCIAMIENTO"]
 st.bar_chart(Barra)   
 
 
+opcion = st.selectbox(
+  "Selecciones xd",
+  L_Insti["DEPARTAMENTO"]
+  )
 
-"""opcion = st.selectbox(L_Insti["DEPARTAMENTO"])
-st.write('You selected:', opcion)"""
+st.write('You selected:', opcion)
+
+
 """
 if opcion =="AREQUIPA":
   st.area_chart(L_Insti["DEPARTAMENTO"], use_container_width=True)

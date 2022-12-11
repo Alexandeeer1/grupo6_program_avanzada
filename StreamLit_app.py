@@ -239,16 +239,7 @@ st.checkbox("Cajas Expandidas", value=False, key="use_container_width")
 st.dataframe(L_Insti)
 st.write("-----------------------------")
 
-x=L_Insti.set_index("NOMBRE")   
-caja= st.multiselect(
-    "Seleccione las universidades que desea comparar la el periodo de licenciamiento", 
-    options= L_Insti["NOMBRE"].unique()
-    )
 
-filas= x.loc[caja]
-st.dataframe(filas)
-Barra= x.loc[caja,"PERIODO_LICENCIAMIENTO"]
-st.bar_chart(Barra)   
 
 opcion = st.selectbox(
   "Selecciones xd",
@@ -339,6 +330,7 @@ elif opcion =="TACNA":
 
 
 st.write("-----------------------------")
+
 
 x=L_Insti.set_index("NOMBRE")   
 caja= st.multiselect(

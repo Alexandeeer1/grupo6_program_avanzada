@@ -239,8 +239,34 @@ st.checkbox("Cajas Expandidas", value=False, key="use_container_width")
 st.dataframe(L_Insti)
 st.write("-----------------------------")
 
-opcion = st.selectbox(L_Insti["DEPARTAMENTO"])
-st.write('You selected:', opcion)
+set_universidades= L_Insti['NOMBRE'].dropna().unique()
+x= L_Insti.set_index("NOMBRE")
+esta= L_Insti["TIPO_GESTION"].unique()
+licensi= L_Insti["ESTADO_LICENCIAMIENTO"].unique()
+estado=st.selectbox("Gestion tipo:",("Publico","Privado"))
+
+if estado== "Publico":
+    public= L_Insti.loc[L_Insti.loc[:,"TIPO_GESTION"]=="PÚBLICO"]
+    st.dataframe(L_Insti.loc[L_Insti.loc[:,"TIPO_GESTION"]=="PÚBLICO"])
+elif estado== "Privado":
+    public= L_Insti.loc[L_Insti.loc[:,"TIPO_GESTION"]=="PRIVADO"]
+    st.dataframe(L_Insti.loc[L_Insti.loc[:,"TIPO_GESTION"]=="PRIVADO"])
+    
+    
+opti= st.multiselect(
+    "Seleccione las universidades que desea comparar la el periodo de licenciamiento", 
+    options= data["NOMBRE"].unique()
+    )
+para= x.loc[opti]
+st.dataframe(para)
+baraa= x.loc[opti,"PERIODO_LICENCIAMIENTO"]
+
+st.bar_chart(baraa)    
+
+
+
+"""opcion = st.selectbox(L_Insti["DEPARTAMENTO"])
+st.write('You selected:', opcion)"""
 """
 if opcion =="AREQUIPA":
   st.area_chart(L_Insti["DEPARTAMENTO"], use_container_width=True)

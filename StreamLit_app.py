@@ -257,11 +257,10 @@ opcion = st.selectbox(
 
 st.write('You selected:', opcion)
 
-
-"""
 if opcion =="AREQUIPA":
   st.area_chart(L_Insti["DEPARTAMENTO"], use_container_width=True)
-
+  
+"""
 if opcion =="AYACUCHO":
   st.area_chart(L_Insti["DEPARTAMENTO"], use_container_width=True)
   

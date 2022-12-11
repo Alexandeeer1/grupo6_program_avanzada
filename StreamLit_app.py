@@ -238,20 +238,7 @@ L_Insti = pd.read_excel(r'https://github.com/Alexandeeer1/grupo6_program_avanzad
 st.checkbox("Cajas Expandidas", value=False, key="use_container_width")
 st.dataframe(L_Insti)
 st.write("-----------------------------")
-x=L_Insti.set_index("NOMBRE")
-"""set_universidades= L_Insti['NOMBRE'].dropna().unique()
-esta= L_Insti["TIPO_GESTION"].unique()
-licensi= L_Insti["ESTADO_LICENCIAMIENTO"].unique()
-estado=st.selectbox("Gestion tipo:",("Publico","Privado"))
-
-if estado== "Publico":
-    public= L_Insti.loc[L_Insti.loc[:,"TIPO_GESTION"]=="PÚBLICO"]
-    st.dataframe(L_Insti.loc[L_Insti.loc[:,"TIPO_GESTION"]=="PÚBLICO"])
-elif estado== "Privado":
-    public= L_Insti.loc[L_Insti.loc[:,"TIPO_GESTION"]=="PRIVADO"]
-    st.dataframe(L_Insti.loc[L_Insti.loc[:,"TIPO_GESTION"]=="PRIVADO"])"""
-    
-    
+x=L_Insti.set_index("NOMBRE")   
 opti= st.multiselect(
     "Seleccione las universidades que desea comparar la el periodo de licenciamiento", 
     options= L_Insti["NOMBRE"].unique()
@@ -259,9 +246,9 @@ opti= st.multiselect(
 
 para= x.loc[opti]
 st.dataframe(para)
-"""baraa= x.loc[opti,"PERIODO_LICENCIAMIENTO"]
+baraa= x.loc[opti,"PERIODO_LICENCIAMIENTO"]
 
-st.bar_chart(baraa)"""    
+st.bar_chart(baraa)   
 
 
 

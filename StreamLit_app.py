@@ -239,9 +239,9 @@ st.checkbox("Cajas Expandidas", value=False, key="use_container_width")
 st.dataframe(L_Insti)
 st.write("-----------------------------")
 
-"""opcion = st.selectbox(L_Insti["DEPARTAMENTO"])
+opcion = st.selectbox(L_Insti["DEPARTAMENTO"])
 st.write('You selected:', opcion)
-
+"""
 if opcion =="AREQUIPA":
   st.area_chart(L_Insti["DEPARTAMENTO"], use_container_width=True)
 

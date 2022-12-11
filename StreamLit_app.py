@@ -255,7 +255,7 @@ elif estado== "Privado":
     
 opti= st.multiselect(
     "Seleccione las universidades que desea comparar la el periodo de licenciamiento", 
-    options= data["NOMBRE"].unique()
+    options= L_Insti["NOMBRE"].unique()
     )
 para= x.loc[opti]
 st.dataframe(para)

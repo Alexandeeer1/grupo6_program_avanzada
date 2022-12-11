@@ -262,7 +262,7 @@ if opcion =="AREQUIPA":
   
 elif opcion =="AYACUCHO":
   st.area_chart(L_Insti["DEPARTAMENTO"], use_container_width=True)
-  
+"""
 elif opcion =="CAJAMARCA":
   st.area_chart(L_Insti["DEPARTAMENTO"], use_container_width=True)
   
@@ -318,7 +318,7 @@ elif opcion =="SAN MARTÍN":
   st.area_chart(L_Insti["DEPARTAMENTO"], use_container_width=True)
   
 elif opcion =="TACNA":
-  st.area_chart(L_Insti["DEPARTAMENTO"], use_container_width=True)
+  st.area_chart(L_Insti["DEPARTAMENTO"], use_container_width=True)"""
   
 st.write("-----------------------------")"""
 ###############################################################

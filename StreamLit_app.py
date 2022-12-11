@@ -263,66 +263,82 @@ elif opcion =="AYACUCHO":
   unis=L_Insti.loc[L_Insti.loc[:,"DEPARTAMENTO"]=="AYACUCHO"]
   st.dataframe(unis)
 
-"""  
+  
 elif opcion =="CAJAMARCA":
-  st.area_chart(L_Insti["DEPARTAMENTO"], use_container_width=True)
+  unis=L_Insti.loc[L_Insti.loc[:,"DEPARTAMENTO"]=="CAJAMARCA"]
+  st.dataframe(unis)
+
   
 elif opcion =="CALLAO":
-  st.area_chart(L_Insti["DEPARTAMENTO"], use_container_width=True)
+  unis=L_Insti.loc[L_Insti.loc[:,"DEPARTAMENTO"]=="CALLAO"]
+  st.dataframe(unis)
   
 elif opcion =="CUSCO":
-  st.area_chart(L_Insti["DEPARTAMENTO"], use_container_width=True)
+  unis=L_Insti.loc[L_Insti.loc[:,"DEPARTAMENTO"]=="CUSCO"]
+  st.dataframe(unis)
   
 elif opcion =="HUANCAVELICA":
-  st.area_chart(L_Insti["DEPARTAMENTO"], use_container_width=True)
+  unis=L_Insti.loc[L_Insti.loc[:,"DEPARTAMENTO"]=="HUANCAVELICA"]
+  st.dataframe(unis)
   
 elif opcion =="HUÁNUCO":
-  st.area_chart(L_Insti["DEPARTAMENTO"], use_container_width=True)
+  unis=L_Insti.loc[L_Insti.loc[:,"DEPARTAMENTO"]=="HUÁNUCO"]
+  st.dataframe(unis)
   
 elif opcion =="ICA":
-  st.area_chart(L_Insti["DEPARTAMENTO"], use_container_width=True)
+  unis=L_Insti.loc[L_Insti.loc[:,"DEPARTAMENTO"]=="ICA"]
+  st.dataframe(unis)
   
 elif opcion =="JUNÍN":
-  st.area_chart(L_Insti["DEPARTAMENTO"], use_container_width=True)
+  unis=L_Insti.loc[L_Insti.loc[:,"DEPARTAMENTO"]=="JUNÍN"]
+  st.dataframe(unis)
+  
   
 elif opcion =="LA LIBERTAD":
-  st.area_chart(L_Insti["DEPARTAMENTO"], use_container_width=True)
+  unis=L_Insti.loc[L_Insti.loc[:,"DEPARTAMENTO"]=="LIBERTAD"]
+  st.dataframe(unis)
   
 elif opcion =="LAMBAYEQUE":
-  st.area_chart(L_Insti["DEPARTAMENTO"], use_container_width=True)
+  unis=L_Insti.loc[L_Insti.loc[:,"DEPARTAMENTO"]=="LAMBAYEQUE"]
+  st.dataframe(unis)
   
-elif opcion =="LIMA METROPOLITANA":
-  st.area_chart(L_Insti["DEPARTAMENTO"], use_container_width=True)
-  
-elif opcion =="LIMA (DEPARTAMENTO)":
-  st.area_chart(L_Insti["DEPARTAMENTO"], use_container_width=True)
+elif opcion =="LIMA":
+  unis=L_Insti.loc[L_Insti.loc[:,"DEPARTAMENTO"]=="LIMA"]
+  st.dataframe(unis)
   
 elif opcion =="LORETO":
-  st.area_chart(L_Insti["DEPARTAMENTO"], use_container_width=True)
+  unis=L_Insti.loc[L_Insti.loc[:,"DEPARTAMENTO"]=="LORETO"]
+  st.dataframe(unis)
   
 elif opcion =="MADRE DE DIOS":
-  st.area_chart(L_Insti["DEPARTAMENTO"], use_container_width=True)
+  unis=L_Insti.loc[L_Insti.loc[:,"DEPARTAMENTO"]=="MADRE DE DIOS"]
+  st.dataframe(unis)
   
 elif opcion =="MOQUEGUA":
-  st.area_chart(L_Insti["DEPARTAMENTO"], use_container_width=True)
+  unis=L_Insti.loc[L_Insti.loc[:,"DEPARTAMENTO"]=="MOQUEGUA"]
+  st.dataframe(unis)
   
 elif opcion =="PASCO":
-  st.area_chart(L_Insti["DEPARTAMENTO"], use_container_width=True)
+  unis=L_Insti.loc[L_Insti.loc[:,"DEPARTAMENTO"]=="PASCO"]
+  st.dataframe(unis)
   
 elif opcion =="PIURA":
-  st.area_chart(L_Insti["DEPARTAMENTO"], use_container_width=True)
+  unis=L_Insti.loc[L_Insti.loc[:,"DEPARTAMENTO"]=="PIURA"]
+  st.dataframe(unis)
   
 elif opcion =="PUNO":
-  st.area_chart(L_Insti["DEPARTAMENTO"], use_container_width=True)
+  unis=L_Insti.loc[L_Insti.loc[:,"DEPARTAMENTO"]=="PUNO"]
+  st.dataframe(unis)
   
 elif opcion =="SAN MARTÍN":
-  st.area_chart(L_Insti["DEPARTAMENTO"], use_container_width=True)
-  
+  unis=L_Insti.loc[L_Insti.loc[:,"DEPARTAMENTO"]=="SAN MARTÍN"]
+  st.dataframe(unis)
 elif opcion =="TACNA":
-  st.area_chart(L_Insti["DEPARTAMENTO"], use_container_width=True)
+  unis=L_Insti.loc[L_Insti.loc[:,"DEPARTAMENTO"]=="TACNA"]
+  st.dataframe(unis)
   
 st.write("-----------------------------")
-###############################################################"""
+"""###############################################################"""
 
 
 

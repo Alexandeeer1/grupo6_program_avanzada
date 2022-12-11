@@ -260,65 +260,64 @@ st.write('You selected:', opcion)
 if opcion =="AREQUIPA":
   st.area_chart(L_Insti["DEPARTAMENTO"], use_container_width=True)
   
-"""
-if opcion =="AYACUCHO":
+elif opcion =="AYACUCHO":
   st.area_chart(L_Insti["DEPARTAMENTO"], use_container_width=True)
   
-if opcion =="CAJAMARCA":
+elif opcion =="CAJAMARCA":
   st.area_chart(L_Insti["DEPARTAMENTO"], use_container_width=True)
   
-if opcion =="CALLAO":
+elif opcion =="CALLAO":
   st.area_chart(L_Insti["DEPARTAMENTO"], use_container_width=True)
   
-if opcion =="CUSCO":
+elif opcion =="CUSCO":
   st.area_chart(L_Insti["DEPARTAMENTO"], use_container_width=True)
   
-if opcion =="HUANCAVELICA":
+elif opcion =="HUANCAVELICA":
   st.area_chart(L_Insti["DEPARTAMENTO"], use_container_width=True)
   
-if opcion =="HUÁNUCO":
+elif opcion =="HUÁNUCO":
   st.area_chart(L_Insti["DEPARTAMENTO"], use_container_width=True)
   
-if opcion =="ICA":
+elif opcion =="ICA":
   st.area_chart(L_Insti["DEPARTAMENTO"], use_container_width=True)
   
-if opcion =="JUNÍN":
+elif opcion =="JUNÍN":
   st.area_chart(L_Insti["DEPARTAMENTO"], use_container_width=True)
   
-if opcion =="LA LIBERTAD":
+elif opcion =="LA LIBERTAD":
   st.area_chart(L_Insti["DEPARTAMENTO"], use_container_width=True)
   
-if opcion =="LAMBAYEQUE":
+elif opcion =="LAMBAYEQUE":
   st.area_chart(L_Insti["DEPARTAMENTO"], use_container_width=True)
   
-if opcion =="LIMA METROPOLITANA":
+elif opcion =="LIMA METROPOLITANA":
   st.area_chart(L_Insti["DEPARTAMENTO"], use_container_width=True)
   
-if opcion =="LIMA (DEPARTAMENTO)":
+elif opcion =="LIMA (DEPARTAMENTO)":
   st.area_chart(L_Insti["DEPARTAMENTO"], use_container_width=True)
   
-if opcion =="LORETO":
+elif opcion =="LORETO":
   st.area_chart(L_Insti["DEPARTAMENTO"], use_container_width=True)
   
-if opcion =="MADRE DE DIOS":
+elif opcion =="MADRE DE DIOS":
   st.area_chart(L_Insti["DEPARTAMENTO"], use_container_width=True)
   
-if opcion =="MOQUEGUA":
+elif opcion =="MOQUEGUA":
   st.area_chart(L_Insti["DEPARTAMENTO"], use_container_width=True)
   
-if opcion =="PASCO":
+elif opcion =="PASCO":
   st.area_chart(L_Insti["DEPARTAMENTO"], use_container_width=True)
   
-if opcion =="PIURA":
+elif opcion =="PIURA":
   st.area_chart(L_Insti["DEPARTAMENTO"], use_container_width=True)
   
-if opcion =="PUNO":
+elif opcion =="PUNO":
   st.area_chart(L_Insti["DEPARTAMENTO"], use_container_width=True)
   
-if opcion =="SAN MARTÍN":
+elif opcion =="SAN MARTÍN":
   st.area_chart(L_Insti["DEPARTAMENTO"], use_container_width=True)
   
-if opcion =="TACNA":
+elif opcion =="TACNA":
   st.area_chart(L_Insti["DEPARTAMENTO"], use_container_width=True)
   
 st.write("-----------------------------")"""
